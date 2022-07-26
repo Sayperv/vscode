@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menü</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="main.css" type="text/css" rel="stylesheet" />
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      text-align: center;
+      font-size: 62.5%;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0d1117;
+    }
+
+    #sayfa {
+      width: 1300px;
+      margin: 0 auto;
+      float: left;
+    }
+
+    #icerik {
+      float: center;
+      width: 70px;
+      height: 400px;
+      float: left;
+      margin-left: 40px;
+      position: fixed;
+      left: 10px;
+
+    }
+
+    #anaMenu {
+      float: left;
+      position: relative;
+      left: 220px;
+      width: 800px;
+      height: 1700px;
+      position: absolute;
+    }
+
+    #haberler {
+      float: left;
+      position: relative;
+      left: 220px;
+      width: 800px;
+      height: 1700px;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      top: 0px;
+      left: 0px;
+
+    }
+
+    #güncelleme {
+      float: left;
+      position: relative;
+      width: 800px;
+      height: 1700px;
+      position: absolute;
+      color: #fff;
+      top: 0px;
+      left: 0px;
+    }
+
+    #lineups {
+      float: left;
+      position: relative;
+      left: 220px;
+      width: 800px;
+      height: 3400px;
+      position: absolute;
+      color: #fff;
+      top: 0px;
+      left: 0px;
+
+    }
+
+    #arkaplan {
+      float: left;
+      position: absolute;
+      left: 220px;
+      width: 800px;
+      height: 2000px;
+      top: 0px;
+      left: 0px;
+    }
+
+    .myCarousel {
+      float: right;
+      width: 280px;
+      height: 600px;
+      background-color: transparent;
+      position: fixed;
+      right: 48px;
+      top: 90px;
+    }
+
+
+
+    .buton {
+      font-size: 15px;
+      color: rgb(53, 53, 53);
+      background-color: rgba(255, 255, 255, 0);
+
+
+
+    }
+
+    .sayfa {
+      border-radius: 10px;
+    }
+
+    .çizgi {
+      margin-left: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100px;
+      background-color: rgb(255, 255, 255);
+      opacity: 0.4;
+    }
+
+    .güclbilgi {
+      line-height: 20px;
+      text-align: left;
+      margin-left: 20px;
+
+    }
+
+    .gclfoto {
+      float: left;
+      height: 240px;
+    }
+
+    .özellikleri {
+      text-align: left;
+      margin-left: 20px;
+    }
+
+    .videolar {
+      width: 500px;
+      margin-top: 15px;
+
+    }
+
+    .col {
+      margin-top: 20px;
+    }
+
+    .açıklama {
+      margin-top: 70px;
+
+    }
+
+    .başlık2 {
+      font-size: 18px;
+      color: gray;
+    }
+
+    .button {
+      color: rgb(255, 255, 255);
+
+
+    }
+
+    .button:hover {
+      color: rgba(255, 255, 255, 0.335);
+      text-decoration: none
+    }
+
+    .şekil {
+      border-left: 4px solid rgb(255, 0, 0);
+      transition: 300ms all;
+
+    }
+
+    .arkapaln {
+
+      float: left;
+      margin-left: 30px;
+    }
+
+    .arkafoto {
+      float: left;
+    }
+
+    .indirmelink {
+      position: relative;
+    }
+
+    .card-deck {
+      width: 825px;
+      height: 120px;
+      font-size: 15px;
+    }
+
+    .card-img-top:hover {
+      opacity: 0.7;
+    }
+
+    hr {
+      width: 190px;
+      margin-left: 0px;
+    }
+
+    .iconlar {
+      text-align: none;
+      width: 50px;
+    }
+  </style>
+</head>
+
+
+<body>
+  <ul class="menu">
+    <h1 class="logo">
+      <span>V</span>
+      <span>A</span>
+      <span>L</span>
+      <span>O</span>
+      <span>R</span>
+      <span>A</span>
+      <span>N</span>
+      <span>T</span>
+
+    </h1>
+    <li>
+      <a href="http://127.0.0.1:5500/yard%C4%B1m.html#">Yardım</a>
+    </li>
+    <li>
+      <a href="http://127.0.0.1:5500/karakter.html">Karakterler</a>
+      <ul>
+        <li>
+          <a href="http://127.0.0.1:5500/karakter.html#Jett">Jett</a>
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/karakter.html#Reyna">Reyna</a>
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/karakter.html#Yoruuuuuuu">Yoruuuuuuu</a>
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/karakter.html#Sage">Sage</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="http://127.0.0.1:5500/harita.html">Haritalar</a>
+      <ul>
+        <li>
+          <a href="http://127.0.0.1:5500/harita.html#Ascent">Ascent</a>
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/harita.html#B%C4%B1nd">Bınd</a>
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/harita.html#Breeze">Breeze</a>
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/harita.html#Haven">Haven</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="http://127.0.0.1:5500/valorant%20web.html">Menü</a>
+    </li>
+  </ul>
+  <div id="sayfa">
+    <div id="KapsayiciAlan">
+      <div id="icerik">
+        <ul class="buton">
+          <div class="button şekil" href="#" onclick="Yazdir('anaMenu');"><img class="iconlar"
+              src="haberler2/icons8-menu-rounded-100.png" alt="">Ana menü</div><br>
+          <div class="button" href="#" onclick="Yazdir('güncelleme');"><img class="iconlar"
+              src="haberler2/icons8-update-100.png" alt="">Güncellemeler</div><br>
+          <div class="button" href="#" onclick="Yazdir('lineups');"><img class="iconlar"
+              src="haberler2/Snake_Bite (1).png" alt="">lineups</div><br>
+          <div class="button" href="#" onclick="Yazdir('arkaplan');"><img class="iconlar"
+              src="haberler2/icons8-wallpaper-90.png" alt="">Arkaplanlar</div><br>
+          <li class="button oto"></li>
+        </ul>
+      </div>
+      <div id="anaMenu">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="/haberler2/VCT22_M2_Finals_Article_Header.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">
+                22-24 TEMMUZ'DA MASTERS KOPENHAG FİNAL HAFTASINI KAÇIRMAYIN</h5>
+              <p class="card-text">İki hafta süren nefes kesici rekabet sonrasında yalnızca dört takım kaldı. Bakalım
+                ilk defa canlı izleyicilerin de bulunduğu bu turnuvada Masters kupasını kim eve götürecek?</p>
+              <p class="card-text"><small class="text-muted">2 gün önce</small></p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/haberler2/Valorant-Viper-Rehberi-–-Viper-Nasil-Oynanir.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Viper mainlere lineuplar</h5>
+              <p class="card-text">Viper duvarı ve zehri bulunan lineuplar</p>
+              <a id="tıklamaviper" href="#" class="btn btn-primary">lineuplara göz at</a>
+            </div>
+          </div>
+          <div class="card-deck" style="margin-left: 0px; margin-top: 30px;">
+            <div class="card">
+              <img class="card-img-top" src="/haberler2/KafeTurnuvaları-A20Special-1920x1080-v3.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Kafe turnuvaları başlıyorrr</h5>
+                <p class="card-text">1 5 9 haziran arası sürecek kafe turnuvaları katılmak için www.valorant.com
+                  adresini kullana bilirsiniz</p>
+                <p class="card-text"><small class="text-muted">1 hafta önce</small></p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="/maps/karakter/valorant-karakter-rehberi-sage.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Sage mainlere lineuplar</h5>
+                <p class="card-text">sage duvarları bulunan lineuplar</p>
+                <a id="tıklamasage" href="#" class="btn btn-primary">lineuplara göz at</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="haberler2/maxresdefault (3).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Yeni karakter fade geliyor</h5>
+                <p class="card-text">valorant yeni karakteri fade skilleri belli oldu türk asıllı karakter 19 ajan
+                  olarak oyuna katılıcak</p>
+                <p class="card-text"><small class="text-muted">2 ay önce</small></p>
+              </div>
+            </div>
+            <div class="card-deck">
+              <div class="card" style="margin-top: 30px; margin-left:40px;">
+                <img class="card-img-top" src="/haberler2/resim_2022-06-17_160601105.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Valorant 5.01 YAMA notları belli oldu</h5>
+                  <p class="card-text">Phonix,Yoru,Kay/O gibi Karakterlere nerf gelirken pearl haritası rekabet moduna
+                    gledi</p>
+                  <p class="card-text"><small class="text-muted">1 ay önce</small></p>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+            <div id="güncelleme">
+              <h1>AJAN GÜNCELLEMELERİ</h1><br>
+              <ul>
+                <h3>PHONİX</h3>
+                <img class="gclfoto" src="/slayt foto/V_AGENTS_587x900_Phx (1).png" alt="">
+                <h5 class="güclbilgi">Falso, Phoenix'in yetenek setinin temelini oluşturuyor. Ayarlama seçeneklerini
+                  keşfettikçe gördük ki Falso yeteneğini güçlendirdiğimiz zaman bütün yetenek seti de güçlenmiş oluyor.
+                  Yani
+                  değişikliklerin etkisini anlayabilmek için Phoenix'i Falso'nun ekosistemdeki diğer yeteneklerle daha
+                  iyi
+                  rekabet edebildiği bir ortamda değerlendirmek istedik. Phoenix'e oyunu açan agresif bir ajan gözüyle
+                  bakıyoruz, dolayısıyla Yakardöner ve Ateşten Duvar yeteneklerindeki ek değişikliklerin amacı,
+                  Phoenix'in
+                  bölgeleri ele geçirirken veya turun başında çatışmaya girerken ileriye dönük hedeflerini
+                  desteklemekti.
+                </h5>
+                <h4 class="özellikleri">Falso(Q)</h4>
+                <h5 class="güclbilgi">Azami parlama süresi arttı: 1,1 sn. >>> 1,5 sn. <br>
+                  Kör edici bombanın hazırlanma süresi azaldı: 0,7 sn. >>> 0,5 sn.</h5>,
+                <h4 class="özellikleri">Ateşten Duvar(C)</h4>
+                <h5 class="güclbilgi">Phoenix artık duvarını bükmeyi bırakırsa silahını daha erken kuşanacak.</h5>
+                <h4 class="özellikleri">Yakardöner (X)</h4>
+                <h5 class="gücbilgi">Phoenix artık işaretlenen konumda dolu canla ve yeteneği kullandığı esnadaki zırh
+                  miktarıyla hayata dönecek.</h5>
+
+                <br><br><br><br><br>
+                <h3>YORUUUUUU</h3>
+                <img class="gclfoto" src="/slayt foto/V_AGENTS_587x900_yoru.png">
+                <h5 class="güclbilgi">Yoru oyuncularının ulti kullanırken ana planlarını kurmakta sorun yaşadığını fark
+                  ettik.
+                  Umuyoruz ki bu değişiklikler sorunun bir kısmını gidererek hem sizi ulti sırasında flaş kullandığınız
+                  için
+                  ödüllendirecek hem de rakiplerin karşı koymasını engelleyecek oyun tarzlarının önüne geçmeye devam
+                  edecek.
+                </h5>
+                <h4 class="özellikleri">HATALAR</h4>
+                <h4 class="özellikleri">Boyutlararası Geçiş (X)</h4>
+                <h5 class="gücbilgi">Ulti süresi arttı: 10 sn. >>> 12 sn.
+                  Yeteneği bırakma süresi azaldı: 1,2 sn. >>> 0,8 sn.</h5>
+                <h4 class="özellikleri">HATALAR</h4>
+                <H5 class="gücbilgi">Boyutlararası Geçiş yeteneğinin kullanımı sırasında dokunulmazlık durumunun
+                  istenilenden
+                  daha geç devreye girmesine sebep olan hata giderildi.</H5>
+                <br><br><br><br>
+                <h3>KAY/O</h3>
+                <img class="gclfoto" src="/slayt foto/KAYO_KeyArt_587x900.png" alt="">
+                <H5 class="gücbilgi">KAY/O son yaptığımız değişikliklerden beri fazla yaşam kalitesi güncellemesi
+                  geçirmedi,
+                  bu duruma bir son vermek ve yetenek setinin yeterince ulaşılır gelmeyen kısımlarına da ulaşmanıza
+                  yardım
+                  etmek istedik.</H5>
+                <h4 class="özellikleri">PARÇA/Tesirli (C)</h4>
+                <h5 class="güclbilgi">Alan çapı azaldı: 10 metre >>> 8 metre <br>
+                  Artık görüş alanında olsa da olmasa da hasar verecek. </h5>
+                <h4 class="özellikleri">İPTAL/Komut (X)</h4>
+                <h5 class="güclbilgi">Çöktükten sonra KAY/O'nun tekrar kaldırılma sesinin tamamını artık yalnızca silah
+                  arkadaşları duyacak.<br>
+                  Düşmanlar sadece tekrar kaldırılma başladığında kısa bir ses duyacak. Böylece ulti küreleri veya
+                  Spike'a
+                  dokunmaya benzer oynanış biçimleri ortaya çıkacak.</h5>
+                <h3>OYNANIŞ SİSTEMLERİ</h3>
+                <h5 class="güclbilgi">Yeni İkincil Hesap Tespit Etme Özelliği (Kuzey Amerika)
+                  İkincil hesap tespit sistemlerimize eklediğimiz özellik, yeni oyuncuların (tüm yeni hesapları
+                  kastediyoruz)
+                  uygun beceri seviyesindeki oyuncularla öncekinden çok daha hızlı eşleştirilmesini sağlıyor.
+                  Bu değişikliği önce Kuzey Amerika'da test ediyoruz. Her şeyin doğru şekilde çalıştığından emin olunca
+                  tüm
+                  dünyada uygulamaya geçeceğiz.
+                  Test süreci 11 Temmuz 2022 haftasında başlayacak.
+                  Başka bir oyuncunun yanında veya arkasında yürürken yaşanan çarpışma davranışı geliştirildi.
+                  Bu durum, silah arkadaşlarınızla birbirinize yakın yürürken yaşanan gecikmeyi fazlasıyla azaltacak
+                  (bir
+                  bölgeye koşmak veya başlangıç bölgesinden çıkmak artık daha rahat olacak!).</h5>
+                <h3>OYUN MODLARI</h3>
+                <h5 class="güclbilgi">Spike'a Hücum modundaki İkiz Avcılar artık yok edilebilir duvarlara hasar verecek.
+                </h5>
+              </ul>
+            </div>
+            <div class="row" id="lineups">
+              <div class="col-8">
+                <h3>Chammber</h3>
+                <video class="videolar" controls
+                  src="/lineups/lineups/chamber/chamber-pearl-atk-asite-amain-rendezvous.mp4"></video>
+                <video class="videolar" controls
+                  src="/lineups/lineups/chamber/chamber-pearl-atk-bhall-bmain-rendezvous.mp4"></video>
+                <video class="videolar" controls
+                  src="/lineups/lineups/chamber/chamber-pearl-def-bmain-blink-rendezvous.mp4"></video>
+                <h3>Viper</h3>
+                <video class="videolar" controls
+                  src="/lineups/lineups/viper/(9)viper-breeze-def-midtop-bsite-toxicscreen.mp4"></video>
+                <video class="videolar" controls
+                  src="/lineups/lineups/viper/viper-fracture-def-btree-bcanteen-toxicscreen.mp4"></video>
+                <video class="videolar" controls
+                  src="/lineups/lineups/viper/viper-icebox-atk-adefault-abelt-snakebite.mp4"></video>
+                <h3>Astra</h3>
+                <video class="videolar" controls
+                  src="/lineups/lineups/astra/astra-pearl-atk-midplaza-midshops-gravitywell.mp4"></video>
+                <video class="videolar" controls
+                  src="/lineups/lineups/astra/astra-pearl-def-asite-bsite-nebula.mp4"></video>
+                <video class="videolar" controls
+                  src="/lineups/lineups/astra/astra-pearl-def-midplaza-middoors-nebula.mp4"></video>
+                <h3>Sage</h3>
+                <video class="videolar" controls
+                  src="/lineups/lineups/sage/sage-pearl-atk-asite-asite-barrierorb.mp4"></video>
+                <video class="videolar" controls
+                  src="/lineups/lineups/sage/sage-pearl-atk-bsite-bmain-barrierorb.mp4"></video>
+                <video class="videolar" controls
+                  src="/lineups/lineups/sage/sage-pearl-atk-bsite-midconnector-barrierorb.mp4"></video>
+              </div>
+              <div class="col-4">
+
+                <div class="col">
+                  <h5 class="başlık2" style="margin-top: 100px;">Esnek Post Tesisi A Sahası Işınlanma Kurulumu</h5>
+                  <h6 class="açıklam">İşte esnek ve çok etkili bir Post Plant A Site Kurulumu.</h6>
+                </div>
+                <div class="col">
+                  <h5 class="başlık2" style="margin-top:200px ;">Tesis Sonrası Geri B Bölgesi Işınlanma Kurulumu</h5>
+                  <h6 class="açıklam">İşte basit ama etkili bir Post Plant Back B Site Teleport Kurulumu.</h6>
+                </div>
+                <div class="col">
+                  <h5 class="başlık2" style="margin-top:200px ;">B Ana - B Alanı Agresif Işınlanma Alanı Tutma</h5>
+                  <h6 class="açıklam">İşte harika bir agresif B Main to B Site Işınlanma Site Tutma Kurulumu.</h6>
+                </div>
+                <div class="col">
+                  <h5 class="başlık2" style="margin-top:300px ;">B Siteden Üst Orta Toksik Ekrana</h5>
+                  <h6 class="açıklam">Bu, hem B Sitesi'ne hem de Top Mid'e girişi engellemek için iyi bir zehirli
+                    perdedir.</h6>
+                </div>
+                <div class="col">
+                  <h5 class="başlık2" style="margin-top:200px ;">B Kantinden B Ağacı Zehirli Ekranı</h5>
+                  <h6 class="açıklam">İşte B Ağacı'nın agresif kontrolünü ele geçirmek veya diğer takım
+                    arkadaşlarınızdan bazıları saldırganlaşırken veya haritanın diğer alanlarında bilgi toplarken
+                    saldırganların B Ağacı'nda yer kaplamasını zorlaştırmak için harika bir Zehirli Ekran.</h6>
+                </div>
+                <div class="col">
+                  <h5 class="başlık2" style="margin-top:200px ;">Varsayılan Post Bitki Yılan Isırığına Bir Kemer</h5>
+                  <h6 class="açıklam">Bu Snakebite dizisi, Diken A Varsayılana yerleştirildiğinde, tesis sonrası bir
+                    durumda düşman ekibinin Spike'ı etkisiz hale getirmesini durdurmak için kullanışlıdır.
+
+                  </h6>
+                </div>
+                <div class="col">
+                  <h5 class="başlık2" style="margin-top:200px ;">Erken Yuvarlak Orta Kapılar Orta Mağazalardan
+                    Saldırganlık</h5>
+                  <h6 class="açıklam">Mid Shop'tan raundun başında Mid Doors'un içinde ve çevresinde yer açmak için
+                    kullanabileceğiniz iki yıldız.</h6>
+                </div>
+                <div class="col">
+                  <h5 class="başlık2" style="margin-top:170px ;">Varsayılan Bir Saha Şok Tutma Dumanı + Yerçekimi Kuyusu
+                    Yerleşimi</h5>
+                  <h6 class="açıklam">Düşman ekibinin saldırgan A Site Chokepoint'i geçmesini zorlaştırmak için
+                    haritanın herhangi bir yerinden yapabileceğiniz bir kurulum.</h6>
+                </div>
+                <div class="col">
+                  <h5 class="başlık2" style="margin-top:140px ;">Erken Tur Orta Saldırganlık Duman Yerleştirme</h5>
+                  <h6 class="açıklam">Bu dumanları, takımınıza Mid'de yer kaplamasına yardımcı olmak için veya Mid
+                    oyuncunuzun Mid'de yer almaya çalışan düşman oyunculara karşı savunmasına yardımcı olmak için
+                    kullanın.</h6>
+                </div>
+                <div class="col">
+                  <h5 class="başlık2" style="margin-top:200px ;">Bir Site Yürütme Bariyer Küresi</h5>
+                  <h6 class="açıklam">İşte A Link'teki düşman oyuncuların A Sitesini bir A Sitesi Yürütmesine karşı
+                    savunmasına yardım etmesini zorlaştıran basit ama etkili bir Bariyer Küre.</h6>
+                </div>
+                <div class="col">
+                  <h5 class="başlık2" style="margin-top:200px ;">B Sitesi Spike Tesisi Bariyer Küre Yerleşimi</h5>
+                  <h6 class="açıklam">İşte bir Bariyer Küresi kullanarak B Sitesindeki ani yükselişi azaltmanın basit
+                    ama etkili bir yolu.</h6>
+                </div>
+                <div class="col">
+                  <h5 class="başlık2" style="margin-top:200px ;">B Saha Bariyeri Küre Orta Konektörden Artırma Direk
+                    Tesisi Açısı</h5>
+                  <h6 class="açıklam">İşte Mid Connector'dan B Sitesinde Post Plant oynamanın benzersiz ve beklenmedik
+                    bir yolu.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="arkaplan">
+          <ul class="arkafoto">
+            <img src="/slayt foto/arkaplan/582e565e3cf32d14a239ff68c3a6ee23.jpg" alt=""
+              style="width: 250px;margin-top: 30px;">
+
+            <a class="indirmelink" style="top: 213px;" href="/slayt foto/arkaplan/582e565e3cf32d14a239ff68c3a6ee23.jpg"
+              download="arkaplanfoto">
+              <img src="/slayt foto/icons8-download-48.png" alt=""></a><br>
+
+
+            <img src="/slayt foto/arkaplan/maxresdefault (2).jpg" alt="" style="width: 450px;margin-top: 30px;">
+
+            <a class="indirmelink" style="top: 117px;" href="/slayt foto/arkaplan/maxresdefault (2).jpg" download="">
+              <img src="/slayt foto/icons8-download-48.png" alt=""></a><br>
+
+
+            <img src="/slayt foto/arkaplan/maxresdefault (1).jpg" alt="" style="width: 450px;margin-top: 30px;">
+
+            <a class="indirmelink" style="top: 117px;" href="/slayt foto/arkaplan/maxresdefault (1).jpg" download="">
+              <img src="/slayt foto/icons8-download-48.png" alt=""></a><br>
+
+
+            <img src="/slayt foto/arkaplan/thumb-1920-1186644.png" alt="" style="width: 450px;margin-top: 30px;">
+
+            <a class="indirmelink" style="top: 117px;" href="/slayt foto/arkaplan/thumb-1920-1186644.png" download="">
+              <img src="/slayt foto/icons8-download-48.png" alt=""></a><br>
+
+
+            <img src="/slayt foto/arkaplan/thumb-1920-1204924.jpg" alt="" style="width: 450px;margin-top: 30px;">
+
+            <a class="indirmelink" style="top: 117px;" href="/slayt foto/arkaplan/thumb-1920-1204924.jpg" download="">
+              <img src="/slayt foto/icons8-download-48.png" alt=""></a><br>
+
+
+            <img
+              src="/slayt foto/arkaplan/thumb2-valorant-logo-cut-out-3d-text-white-background-valorant-3d-logo-valorant-emblem.jpg"
+              alt="" style="width: 450px;margin-top: 30px;">
+
+            <a class="indirmelink" style="top: 132px;"
+              href="/slayt foto/arkaplan/thumb2-valorant-logo-cut-out-3d-text-white-background-valorant-3d-logo-valorant-emblem.jpg"
+              download="">
+              <img src="/slayt foto/icons8-download-48.png" alt=""></a><br>
+
+
+
+
+          </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="container">
+        <div id="myCarousel" class="carousel slide myCarousel" data-ride="carousel">
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="/slayt foto/1211516.jpg" alt="yoru" style="height: fit-content width fit-content;">
+            </div>
+            <div class="item">
+              <img src="/slayt foto/FFA_Deathmatch_Desktop.jpg" alt="Reyna" style="width:100%;">
+            </div>
+            <div class="item">
+              <img src="/slayt foto/Valorant-yama-501-notlari-–-Phoenix-ve-Yoru-guclendirmeleri-KAYO.jpg" alt="New york"
+                style="width:100%;">
+            </div>
+            <div class="item">
+              <img src="/slayt foto/VALORANT_Breach_Dark.jpg" alt="breach" style="width:fit-content;">
+            </div>
+            <div class="item">
+              <img src="/slayt foto/VALORANT_Brimm_Dark.jpg" alt="brim" style="width:100%;">
+            </div>
+            <div class="item">
+              <img src="/slayt foto/VALORANT_Cypher_Dark.jpg" alt="cypher " style="width:100%;">
+            </div>
+            <div class="item">
+              <img src="/slayt foto/VALORANT_Jett_Red1.jpg" alt="jett " style="width:100%;">
+            </div>
+            <div class="item">
+              <img src="/slayt foto/VALORANT_Omen_Dark.jpg" alt=" omen" style="width:100%;">
+            </div>
+            <div class="item">
+              <img src="/slayt foto/VALORANT_PHX.jpg" alt="phonix " style="width:100%;">
+            </div>
+            <div class="item">
+              <img src="/slayt foto/ValorantWallpaper_Prime.jpg" alt="asil" style="width:100%;">
+            </div>
+            <div class="item">
+              <img src="/slayt foto/Vertical Viper.jpg" alt="yağmacı" style="width:fit-content;">
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script>
+  document.getElementById("anaMenu").style.visibility = 'visible';
+  document.getElementById("güncelleme").style.visibility = 'hidden';
+  document.getElementById("lineups").style.visibility = 'hidden';
+  document.getElementById("arkaplan").style.visibility = 'hidden';
+
+  function Yazdir(deger) {
+    var menuVisible = document.getElementById(deger);
+    document.getElementById("anaMenu").style.visibility = "hidden";
+    document.getElementById("güncelleme").style.visibility = "hidden";
+    document.getElementById("lineups").style.visibility = "hidden";
+    document.getElementById("arkaplan").style.visibility = "hidden";
+
+    if (menuVisible.style.visibility == "hidden") {
+      var deger = document.getElementById(deger);
+      deger.style.visibility = "visible";
+
+    }
+  }
+</script>
+
+<script>
+  document.getElementById("tıklamaviper").onclick = function () {
+    Yazdir('lineups')
+  }
+  butonAktifEtme();
+  function butonAktifEtme() {
+    var header = document.getElementById("icerik");
+    var btns = header.getElementsByClassName("button");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("şekil");
+        if (current.length > 0) {
+          current[0].className = current[0].className.replace(" şekil", "");
+        }
+        this.className += " şekil";
+      });
+    }
+  }
+  document.getElementById("tıklamasage").onclick = function () {
+    Yazdir('lineups')
+  }
+  butonAktifEtme();
+  function butonAktifEtme() {
+    var header = document.getElementById("icerik");
+    var btns = header.getElementsByClassName("button");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("şekil");
+        if (current.length > 0) {
+          current[0].className = current[0].className.replace(" şekil", "");
+        }
+        this.className += " şekil";
+      });
+    }
+  }
+
+</script>
+
+</html>
